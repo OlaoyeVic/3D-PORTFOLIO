@@ -50,13 +50,13 @@ import {
       icon: mobile,
     },
     {
-      title: "Technical Writr",
+      title: "Technical Writer",
       icon: backend,
     },
-    {
-      title: "Content Creator",
-      icon: creator,
-    },
+    // {
+    //   title: "Content Creator",
+    //   icon: creator,
+    // },
   ];
   
   const technologies = [
