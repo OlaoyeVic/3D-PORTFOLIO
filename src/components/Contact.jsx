@@ -16,14 +16,12 @@ const Contact = () => {
     message: '',
   })
 
-  // const handleChange = () => {}
-  // const handleSubmit = () => {}
-
   const handleChange = (event) => {
-    const { name, value } = event.target
+    // const { name, value } = event.target
     setForm({
       ...form,
-      [name]: value,
+      [event.target.name]: event.target.value
+      // [name]: value,
     })
   }
 
@@ -72,7 +70,7 @@ const Contact = () => {
             <input
               type='text'
               name='name'
-              // value={form.name}
+              value={form.name}
               onChange={handleChange}
               placeholder="What's your name"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium'
@@ -83,7 +81,7 @@ const Contact = () => {
             <input
               type='text'
               name='email'
-              // value={form.email}
+              value={form.email}
               onChange={handleChange}
               placeholder="What's your email"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium'
@@ -94,7 +92,7 @@ const Contact = () => {
             <textarea
               rows="7"
               name='message'
-              // value={form.message}
+              value={form.message}
               onChange={handleChange}
               placeholder="What do you want to say"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium'
