@@ -113,8 +113,4 @@ const Contact = () => {
   )
 }
 
-export default SectionWrapper(Contact, "contact")
-
-// template_x4ugezu
-// service_jly36fh
-// Dpb-hMQBC7s3a_rEP
+export default SectionWrapper(Contact, "contact");
